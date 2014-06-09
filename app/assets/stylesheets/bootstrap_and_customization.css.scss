@@ -1,8 +1,13 @@
-$body-bg: #d35400;
-$navbar-inverse-bg: #e67e22;
-$navbar-inverse-link-color: white;
-$brand-primary: #f39c12;
-$jumbotron-bg: #ecf0f1;
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700);
+
+$font-family-sans-serif: 		'Cabin', Helvetica Neue, Arial;
+$body-bg: 						#d35400;
+$navbar-inverse-bg: 			#e67e22;
+$navbar-inverse-link-color: 	white;
+$brand-primary: 				#f39c12;
+$jumbotron-bg: 					#ecf0f1;
+$jumbotron-padding: 			10px;
+
 
 @import 'bootstrap';
 
