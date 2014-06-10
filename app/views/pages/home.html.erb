@@ -2,8 +2,15 @@
 <div class ="jumbotron center"> 
 	<center> <h1>Hello World!</h1> 
 	<p>It's Time for Ruby!</p> 
-		<p> 
-				Click here to <%= link_to "Sign Up", "http://www.google.com", class: "btn btn-danger btn-lg" %> . 
+
+<% if user_signed_in? %>
+    Welcome to our exclusive members area!
+    <% else %>
+		
+		<%= link_to "Log In", new_user_session_path, class: "btn btn-default btn-lg" %> 
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger btn-lg" %> . 
+	<% end %>
+
 	</p></center>
 
-</div>
+</div>	
